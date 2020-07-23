@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    width: 1204px;
+    height: 752px;
+    margin: 20px auto;
+    background: url(timg.png) no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.setting{
+    width: 360px;
+    height: 150px;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 120px;
+    left: 500px;
+}
+.nandu{
+    width: 240px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18;
+    color: darkorange;
+    position: absolute;
+    left: 60px;
+    top: 40px;
+}
+.zhi1{
+    float: left;
+    margin-left: 20px;
+}
+.nandu span{
+    display: block;
+    float: left;
+}
+.box-start{
+    width: 160px;
+    height: 32px;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    background: #1E90FF;
+    border-radius: 6px;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.chenggong{
+    width: 360px;
+    height: 120px;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 120px;
+    left: 500px;
+    display: none;
+}
+.chenggong span{
+    display: block;
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 6px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.xiayiguan{
+    width: 160px;
+    height: 32px;
+    background: #1E90FF;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 6px;
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.end{
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-weight: 700;
+    position: absolute;
+    top: 360px;
+    left:420px;
+    display: none;
+}
+.rule{
+    width: 1204px;
+    height: 60px;
+    margin: 0 auto;
+}
+.rule div{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color: #999;
+}
+.jifen{
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,.7);
+    line-height: 30px;
+    padding: 15px;
+    display: none;
+    text-align: center;
+    color: #4169E1;
+    font-size: 16px;
+}
+.xuetiao{
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,.7);;
+    line-height: 30px;
+    padding: 15px;
+    display: none;
+    text-align: center;
+    color: #ff0036;
+    font-size: 15px;
+}

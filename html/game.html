@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打字游戏</title>
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <div class="box">
+        <img src="../images/timg.png" alt="">
+        <div class="setting">
+            <div class="nandu">
+                <span>难度:</span>
+                <div class="zhi1">
+                    <input type="radio" name="radio" value="3" id="zhishu1" checked>
+                    <label for="zhishu">3</label>
+                </div>
+                <div class="zhi1">
+                    <input type="radio" name="radio" value="5" id="zhishu2">
+                    <label for="zhishu2">5</label>
+                </div>
+                <div class="zhi1">
+                    <input type="radio" name="radio" value="8" id="zhishu3">
+                    <label for="zhishu3">8</label>
+                </div>
+            </div>
+            <div class="box-start">
+                开始游戏
+            </div>
+        </div>
+        <div class="chenggong">
+            <span>恭喜你！挑战成功</span>
+            <div class="xiayiguan">
+                下一关
+            </div>
+        </div>
+        <div class="end">游戏结束！</div>
+        <div class="jifen"></div>
+        <div class="xuetiao"></div>
+    </div>
+    <div class="rule">
+        <div>打字游戏</div>
+        <div>游戏规则：在键盘输入来消除字母，十个字母未消除闯关失败。积分累计100可进入下一关。</div>
+    </div>
+
+    <script src="../javascript/game.js"></script>
+</body>
+</html>
