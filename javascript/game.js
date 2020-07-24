@@ -1,4 +1,9 @@
-var letters=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var letters=[{letter:"A",img:"../images/A.png"},{letter:"B",img:"../images/B.png"},{letter:"C",img:"../images/C.png"},{letter:"D",img:"../images/D.png"},{letter:"E",img:"../images/E.png"},{letter:"F",img:"../images/F.png"},{letter:"G",img:"../images/G.png"},{letter:"H",img:"../images/H.png"},{letter:"I",img:"../images/I.png"},{letter:"J",img:"../images/J.png"},{letter:"K",img:"../images/K.png"},{letter:"L",img:"../images/L.png"},{letter:"M",img:"../images/M.png"},{letter:"O",img:"../images/O.png"},{letter:"P",img:"../images/P.png"},{letter:"Q",img:"../images/Q.png"},{letter:"R",img:"../images/R.png"},{letter:"S",img:"../images/S.png"},{letter:"T",img:"../images/T.png"},{letter:"U",img:"../images/U.png"},{letter:"V",img:"../images/V.png"},{letter:"W",img:"../images/W.png"},{letter:"X",img:"../images/X.png"},{letter:"Y",img:"../images/Y.png"},{letter:"Z",img:"../images/Z.png"},{letter:"N",img:"../images/N.png"},];
+
+// var img=document.createElement("img");
+// img.src=letters[0].img;
+// document.body.appendChild(img)
+// console.log(letters[0].img)
 var colors=["red","orange","yellow","green","blue","pink","#FFB6C1","#FFF0F5","#4B0082","#483D8B","#5C4033","#CC99FF","#00FFFF","#003300"]
 var boxStart=document.querySelector(".box-start");
 var setting=document.querySelector(".setting");
@@ -6,16 +11,20 @@ var end=document.querySelector(".end");
 var divs=[]
 var box=document.querySelector(".box");
 function create(num){
-var current=[];
-for(var i=0;i<num;i++){
-    current.push(letters[Math.floor(letters.length*Math.random())]);
-}
-for(var i=0;i<current.length;i++){
-    var letter = document.createElement("div");
-    letter.innerHTML=current[i];
-    box.appendChild(letter);
-    letter.style.cssText="position:absolute;left:"+(1104*Math.random())+"px;top:20px;color:"+colors[Math.floor(colors.length*Math.random())]+";font-size:100px;"
-    divs.push(letter);
+    var current=[];
+    for(var i=0;i<num;i++){
+        current.push(letters[Math.floor(letters.length*Math.random())]);
+    }
+    for(var i=0;i<current.length;i++){
+        var letter = document.createElement("div");
+        var img = document.createElement("img");
+        letter.innerHTML=current[i].letter;
+        img.src=current[i].img;
+        box.appendChild(letter);
+        letter.appendChild(img);
+        letter.style.cssText="position:absolute;left:"+(1104*Math.random())+"px;top:20px;font-size:1px;color:#fff;"
+        img.style.cssText="position:absolute;left:0;bottom:0;"
+        divs.push(letter);
     }
 }
 var jifen=document.querySelector(".jifen");
